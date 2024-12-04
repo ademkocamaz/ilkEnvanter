@@ -4,6 +4,7 @@ from entity._model.status import Status
 
 
 class Entity(Base):
+
     tag = models.CharField(
         verbose_name="Etiket",
         max_length=500,

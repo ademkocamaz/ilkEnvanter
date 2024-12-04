@@ -9,3 +9,5 @@ from entity._model.port import Port
 from entity._model.printer import Printer
 from entity._model.software import Software
 from entity._model.status import Status
+from entity._model.session import Session
+from entity._model.license import License

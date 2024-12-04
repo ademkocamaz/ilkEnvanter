@@ -1,8 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class Status(models.Model):
-    
+
     name = models.CharField(
         verbose_name="Durum Adı",
         max_length=500,

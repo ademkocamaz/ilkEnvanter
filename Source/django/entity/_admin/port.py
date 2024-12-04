@@ -1,12 +1,15 @@
 from django.contrib import admin
 from entity._model.port import Port
 
+
 @admin.register(Port)
 class PortAdmin(admin.ModelAdmin):
     list_display = [field.name for field in Port._meta.fields]
     list_display_links = [field.name for field in Port._meta.fields]
     search_fields = [field.name for field in Port._meta.fields]
-    readonly_fields= ["user",]
+    readonly_fields = [
+        "user",
+    ]
 
     save_on_top = True
 

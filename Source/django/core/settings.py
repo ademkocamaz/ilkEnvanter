@@ -132,7 +132,7 @@ BATON = {
     # 'LOGIN_SPLASH': '/static/login-splash.jpg',
     'GRAVATAR_ENABLED': False,
     'SUPPORT_HREF': 'https://www.ilkadam.com.tr',
-    'COPYRIGHT': '©2023 İLKADAM YAZILIM VE BİLİŞİM TEKNOLOJİLERİ',
+    'COPYRIGHT': '©2010-2024 İLKADAM YAZILIM VE BİLİŞİM TEKNOLOJİLERİ',
     'POWERED_BY': '<a href="https://ilkadam.com.tr">www.ilkadam.com.tr</a>',
     # 'CHANGELIST_FILTERS_IN_MODAL': True,
     # 'CHANGELIST_FILTERS_ALWAYS_OPEN': False,

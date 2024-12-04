@@ -15,7 +15,6 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-zip',
-      platforms: ['darwin'],
     },
     {
       name: '@electron-forge/maker-deb',
@@ -32,4 +31,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        authToken:'',
+        repository: {
+          owner: 'ademkocamaz',
+          name: 'ilkEnvanter'
+        },
+        draft: true,
+      }
+    }
+  ]
 };

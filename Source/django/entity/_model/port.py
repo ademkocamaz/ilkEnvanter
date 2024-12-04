@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class Port(models.Model):
     name = models.CharField(
         verbose_name="Port Adı",

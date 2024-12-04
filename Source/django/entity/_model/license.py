@@ -2,7 +2,7 @@ from django.db import models
 from entity._model.entity import Entity
 
 
-class Software(Entity):
+class License(Entity):
 
     license_key = models.TextField(
         verbose_name="Lisans Anahtarı",
@@ -23,5 +23,5 @@ class Software(Entity):
     )
 
     class Meta:
-        verbose_name = "Yazılım"
-        verbose_name_plural = "Yazılımlar"
+        verbose_name = "Lisans"
+        verbose_name_plural = "Lisanslar"

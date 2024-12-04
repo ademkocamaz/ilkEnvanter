@@ -1,13 +1,13 @@
 from django.contrib import admin
-from entity._model.software import Software
-from entity._admin.software_session import SoftwareSessionInline
+from entity._model.license import License
+from entity._admin.license_session import LicenseSessionInline
 
 
-@admin.register(Software)
-class SoftwareAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in Software._meta.fields]
-    list_display_links = [field.name for field in Software._meta.fields]
-    search_fields = [field.name for field in Software._meta.fields]
+@admin.register(License)
+class LicenseAdmin(admin.ModelAdmin):
+    list_display = [field.name for field in License._meta.fields]
+    list_display_links = [field.name for field in License._meta.fields]
+    search_fields = [field.name for field in License._meta.fields]
     readonly_fields = [
         "user",
     ]
@@ -15,7 +15,7 @@ class SoftwareAdmin(admin.ModelAdmin):
     save_on_top = True
 
     inlines = [
-        SoftwareSessionInline,
+        LicenseSessionInline,
     ]
 
     def save_model(self, request, obj, form, change):

@@ -9,3 +9,8 @@ from entity._admin.port import PortAdmin
 from entity._admin.printer import PrinterAdmin
 from entity._admin.software import SoftwareAdmin
 from entity._admin.status import StatusAdmin
+from entity._admin.license import LicenseAdmin
+
+from baton.models import BatonTheme
+
+admin.site.unregister(BatonTheme)

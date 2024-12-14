@@ -1,5 +1,5 @@
 const { updateElectronApp } = require('update-electron-app');
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, shell } = require('electron');
 const path = require('path');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -37,6 +37,7 @@ const createWindow = () => {
     splashWindow.show();
     updateElectronApp();
     startDjangoServer();
+    shell.openExternal('https://ilkadam.com.tr');
   });
 
   // Create the browser window.
